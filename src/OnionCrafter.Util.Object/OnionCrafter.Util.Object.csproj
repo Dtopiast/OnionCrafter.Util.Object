@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	  <Description></Description>
+	  <Description>Provides a lightweight utility library for enhancing class functionality, focusing on augmenting auditability and implementing design patterns such as Builder, Prototype, and Template Method. The Builder pattern is specifically defined to enable fluent API usage, streamlining object construction and configuration</Description>
 	  <VersionPrefix>1.0.0</VersionPrefix>
 
 	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -16,7 +16,22 @@
 	  <Version>$(VersionPrefix)</Version>
 	  <Authors>Dtopiast</Authors>
 	  <RepositoryType>git</RepositoryType>
+	  <PackageIcon>JustLogo.png</PackageIcon>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/Dtopiast/OnionCrafter.Util.Object</RepositoryUrl>
+	  <PackageTags>utility, builder pattern, prototype pattern, template method pattern, class enhancements, auditability</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Images\JustLogo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="OnionCrafter.Util.BinarySerialization" Version="1.0.1" />
